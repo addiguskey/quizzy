@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { Link } from "react-router-dom";
 
 const styles = {
   card: {
@@ -25,9 +26,15 @@ export default function Home() {
             but really, <br></br>are you good at trivia?
           </p>
           <div className="text-center">
-            <button id="start-button" className="btn btn-md" style={styles.btn}>
-              let's find out
-            </button>
+            <Link to="/questions">
+              <button
+                id="start-button"
+                className="btn btn-md"
+                style={styles.btn}
+              >
+                let's find out
+              </button>
+            </Link>
           </div>
         </div>
       </section>
